@@ -142,7 +142,7 @@ header nav ul li a:hover {
 
 .hero {
     background: linear-gradient(135deg, #4a90e2, #6a5acd);
-    color: #fff;
+    color: #fff; /* Белый цвет текста */
     text-align: center;
     padding: 60px 0;
 }
@@ -150,11 +150,13 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #fff; /* Белый цвет заголовка */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #fff; /* Белый цвет текста */
 }
 
 .hero button {
@@ -173,7 +175,7 @@ header nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Остальные стили для карточек, аккордеона, слайдера и т.д. */
+/* Стили для карточек */
 .cards {
     display: flex;
     flex-direction: column;
@@ -201,6 +203,7 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Стили для аккордеона */
 .accordion-item {
     border-bottom: 1px solid #ddd;
 }
@@ -232,6 +235,7 @@ header nav ul li a:hover {
     display: block;
 }
 
+/* Стили для слайдера */
 .slider {
     position: relative;
     overflow: hidden;
@@ -269,6 +273,7 @@ header nav ul li a:hover {
     background: #357abd;
 }
 
+/* Стили для инструментов */
 .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -294,6 +299,7 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Стили для футера */
 footer {
     background: #4a90e2;
     color: #fff;
