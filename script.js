@@ -92,3 +92,20 @@ mainNav.querySelectorAll('a').forEach(link => {
         }
     });
 });
+
+// Открытие/закрытие меню на мобильных устройствах
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+});
+
+// Закрытие меню при клике на ссылку
+mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            mainNav.classList.remove('active'); // Закрываем меню на мобильных
+        }
+    });
+});
