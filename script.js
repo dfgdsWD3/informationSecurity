@@ -10,7 +10,7 @@ menuToggle.addEventListener('click', () => {
 mainNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
-            mainNav.classList.remove('active'); // Закрываем меню на мобильных
+            mainNav.classList.remove('active');
         }
     });
 });
@@ -43,16 +43,15 @@ document.getElementById('scrollButton').addEventListener('click', () => {
     });
 });
 
-// Функция для проверки видимости секции
+// Анимация появления секций
 function isSectionVisible(section) {
     const rect = section.getBoundingClientRect();
     return (
-        rect.top <= (window.innerHeight * 0.8) && // Секция появляется, когда её верхняя часть и в 80% видима
+        rect.top <= (window.innerHeight * 0.8) &&
         rect.bottom >= 0
     );
 }
 
-// Функция для добавления класса visible
 function handleScroll() {
     document.querySelectorAll('.section').forEach(section => {
         if (isSectionVisible(section)) {
@@ -61,10 +60,15 @@ function handleScroll() {
     });
 }
 
-// Отслеживаем прокрутку
 window.addEventListener('scroll', handleScroll);
-
-// Запускаем проверку при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
+});
+
+// Анимация аккордеона
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        content.classList.toggle('active');
+    });
 });
