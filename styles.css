@@ -282,3 +282,78 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Уменьшаем ширину карточек */
     }
 }
+
+/* Стили для кнопки "бургер" */
+#menuToggle {
+    display: none; /* Скрываем кнопку по умолчанию */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Стили для навигации */
+header nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Горизонтальное меню по умолчанию */
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    background: #4a90e2;
+    border-radius: 5px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: #357abd;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block; /* Показываем кнопку "бургер" на мобильных */
+    }
+
+    header nav {
+        display: none; /* Скрываем меню по умолчанию */
+        position: absolute;
+        top: 70px; /* Отступ от верхнего края */
+        left: 0;
+        right: 0;
+        background: #4a90e2;
+        z-index: 1000;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Вертикальное меню */
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav.active {
+        display: block; /* Показываем меню при активации */
+    }
+}
