@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационная безопасность</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Информационная безопасность</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Введение</a></li>
+                    <li><a href="#importance">Важность</a></li>
+                    <li><a href="#threats">Угрозы</a></li>
+                    <li><a href="#protection">Защита</a></li>
+                    <li><a href="#tools">Инструменты</a></li>
+                    <li><a href="#conclusion">Заключение</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro" class="section hero">
+        <div class="container">
+            <h2>Введение в информационную безопасность</h2>
+            <p>Информационная безопасность — это практика защиты информации от несанкционированного доступа, использования, раскрытия, нарушения, модификации или уничтожения. В современном мире, где данные стали одной из самых ценных ресурсов, обеспечение их безопасности является критически важным.</p>
+            <button id="scrollButton">Узнать больше ↓</button>
+        </div>
+    </section>
+
+    <section id="importance" class="section">
+        <div class="container">
+            <h2>Почему информационная безопасность важна?</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Конфиденциальность</h3>
+                    <p>Защита личной и корпоративной информации от утечек. Конфиденциальность обеспечивает, что данные доступны только авторизованным пользователям.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Целостность</h3>
+                    <p>Обеспечение неизменности данных. Целостность гарантирует, что информация не будет изменена несанкционированно.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Доступность</h3>
+                    <p>Гарантия доступа к данным для авторизованных пользователей. Доступность обеспечивает, что данные будут доступны в нужное время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="threats" class="section">
+        <div class="container">
+            <h2>Основные угрозы</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <i class="fas fa-bug"></i> Вирусы и вредоносное ПО
+                    </button>
+                    <div class="accordion-content">
+                        <p>Программы, которые могут повредить данные или украсть информацию. Примеры: трояны, черви, ransomware. Они могут распространяться через email, загрузки или уязвимости в программном обеспечении.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <i class="fas fa-fish"></i> Фишинг
+                    </button>
+                    <div class="accordion-content">
+                        <p>Мошеннические попытки получить конфиденциальную информацию, например, пароли или данные кредитных карт. Фишинг часто осуществляется через поддельные email или сайты.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <i class="fas fa-network-wired"></i> DDoS-атаки
+                    </button>
+                    <div class="accordion-content">
+                        <p>Попытки сделать сервис недоступным, перегружая его запросами. DDoS-атаки могут привести к значительным финансовым потерям и ухудшению репутации компании.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <i class="fas fa-user-secret"></i> Социальная инженерия
+                    </button>
+                    <div class="accordion-content">
+                        <p>Манипулирование людьми для получения доступа к конфиденциальной информации. Социальная инженерия часто использует психологические уловки, чтобы обмануть жертву.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="protection" class="section">
+        <div class="container">
+            <h2>Как защитить свои данные?</h2>
+            <div class="slider">
+                <div class="slide active">
+                    <h3>Используйте антивирусы</h3>
+                    <p>Регулярно обновляйте антивирусные программы и сканируйте систему. Антивирусы помогают обнаруживать и удалять вредоносное ПО.</p>
+                </div>
+                <div class="slide">
+                    <h3>Обновляйте ПО</h3>
+                    <p>Устанавливайте обновления для операционных систем и приложений, чтобы закрыть уязвимости. Обновления часто содержат исправления для известных проблем безопасности.</p>
+                </div>
+                <div class="slide">
+                    <h3>Используйте сложные пароли</h3>
+                    <p>Создавайте пароли, которые трудно угадать, и меняйте их регулярно. Используйте комбинации букв, цифр и специальных символов.</p>
+                </div>
+                <div class="slide">
+                    <h3>Шифруйте данные</h3>
+                    <p>Используйте шифрование для защиты конфиденциальной информации. Шифрование делает данные недоступными для тех, у кого нет ключа.</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="section">
+        <div class="container">
+            <h2>Инструменты для защиты</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Антивирусы</h3>
+                    <p>Программы для обнаружения и удаления вредоносного ПО. Примеры: Kaspersky, Norton, McAfee.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Менеджеры паролей</h3>
+                    <p>Инструменты для хранения и генерации сложных паролей. Примеры: LastPass, Dashlane, 1Password.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>VPN</h3>
+                    <p>Виртуальные частные сети для защиты интернет-соединений. Примеры: NordVPN, ExpressVPN, CyberGhost.</p>
+                </div>
+                <div class="tool-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Фаерволы</h3>
+                    <p>Сетевые экраны для блокировки нежелательного трафика. Примеры: Windows Firewall, ZoneAlarm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion" class="section">
+        <div class="container">
+            <h2>Заключение</h2>
+            <p>Информационная безопасность — это не просто техническая проблема, а комплексный процесс, который требует внимания со стороны каждого пользователя. Соблюдение базовых правил безопасности и использование современных технологий помогут защитить ваши данные от угроз. Помните, что безопасность начинается с вас!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Информационная безопасность. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

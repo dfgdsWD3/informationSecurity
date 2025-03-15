@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #357abd 3px solid;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+.section {
+    padding: 60px 0;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4a90e2;
+    font-size: 2.5rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #6a5acd);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #ff3b2f;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f1f3f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: #f1f3f4;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #d1d3d4;
+}
+
+.accordion-header i {
+    font-size: 1.2rem;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f1f3f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slider-controls button {
+    padding: 10px 20px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+.slider-controls button:hover {
+    background: #357abd;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #f1f3f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card i {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hero button {
+    padding: 15px 30px;
+    background: #4a90e2; /* Синий цвет */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background: #357abd; /* Темно-синий при наведении */
+    transform: scale(1.05); /* Легкое увеличение */
+}
+
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #6a5acd);
+    color: #fff; /* Белый цвет текста */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff; /* Белый цвет текста */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #fff; /* Белый цвет текста */
+}
+
+/* Основная анимация для всего контента */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100vh); /* Начальное положение: внизу экрана */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Конечное положение: на месте */
+    }
+}
+
+/* Применяем анимацию к основному контейнеру */
+.main-content {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+/* Анимация для появления секций */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Начальное положение: секция ниже */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Конечное положение: секция на месте */
+    }
+}
+
+/* Стили для секций */
+.section {
+    opacity: 0; /* Начальная прозрачность */
+    transform: translateY(50px); /* Начальное смещение */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Класс для активации анимации */
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
