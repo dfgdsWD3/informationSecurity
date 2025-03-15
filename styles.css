@@ -153,6 +153,7 @@ header nav ul li a:hover {
     color: #fff;
     text-align: center;
     padding: 60px 0;
+    border-radius: 0; /* Убираем закругление */
 }
 
 .hero h2 {
